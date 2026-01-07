@@ -53,6 +53,7 @@
       width: 100%;
       max-height: 480px;
       object-fit: cover;
+      display: block;
     }
 
     section {
@@ -143,7 +144,7 @@
       <p>
         Completa el formulario y nos pondremos en contacto contigo lo antes posible.
         Si tienes cualquier duda antes de enviarlo, puedes usar el chat de ayuda
-        disponible en la esquina inferior.
+        disponible en la esquina inferior derecha.
       </p>
 
       <div class="form-container">
@@ -164,11 +165,12 @@
     <span>© 2026 PawCare Clínica Veterinaria · Proyecto de prácticas</span>
   </footer>
 
-  <!-- CHATBOT PIM PIM -->
+  <!-- CHATBOT BOTPRESS v3.5 -->
   <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
   <script>
     window.botpressWebChat.init({
       configUrl: "https://files.bpcontent.cloud/2026/01/07/15/20260107150625-IOZDICSV.json",
+      hideWidget: false,
       useSessionStorage: true,
       resetSessionOnRefresh: true,
       enableSpeechToText: false
@@ -177,4 +179,3 @@
 
 </body>
 </html>
-
