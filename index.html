@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>PawCare · Clínica Veterinaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #2b8f8b;
+      --verde-claro: #e8f5f4;
+      --naranja: #f4a261;
+      --texto: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f7fbfa;
+      color: var(--texto);
+    }
+
+    header {
+      background: linear-gradient(180deg, #ffffff, var(--verde-claro));
+      text-align: center;
+      padding: 50px 20px 40px;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 10px 0;
+      color: var(--verde);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .clinic-image {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    section h2 {
+      color: var(--verde);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    .form-container {
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <img src="logo.png" alt="PawCare Clínica Veterinaria" />
+    <h1>PawCare Clínica Veterinaria</h1>
+    <p>
+      <strong>Pequeñas patitas, grandes sonrisas.</strong><br>
+      Porque su bienestar también es amor.
+    </p>
+  </header>
+
+  <!-- IMAGEN CLÍNICA -->
+  <img src="clinica.jpg" alt="Clínica PawCare" class="clinic-image" />
+
+  <!-- SOBRE PAWCARE -->
+  <section>
+    <div class="card">
+      <h2>Sobre PawCare</h2>
+      <p>
+        PawCare es una clínica veterinaria moderna dedicada al cuidado integral
+        de perros y gatos. Nuestro equipo combina experiencia, tecnología y un
+        trato cercano para que tanto las mascotas como sus familias se sientan
+        seguras, escuchadas y bien cuidadas desde el primer momento.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section>
+    <div class="card">
+      <h2>Solicita tu cita</h2>
+      <p>
+        Completa el formulario y nos pondremos en contacto contigo lo antes posible.
+        Si tienes cualquier duda antes de enviarlo, puedes usar el chat de ayuda
+        disponible en la esquina inferior.
+      </p>
+
+      <div class="form-container">
+        <iframe
+          src="https://tally.so/r/0QBEX6"
+          width="100%"
+          height="650"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 PawCare Clínica Veterinaria · Proyecto de prácticas</span>
+  </footer>
+
+  <!-- CHATBOT PIM PIM -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      configUrl: "https://files.bpcontent.cloud/2026/01/07/15/20260107150625-IOZDICSV.json",
+      useSessionStorage: true,
+      resetSessionOnRefresh: true,
+      enableSpeechToText: false
+    });
+  </script>
+
+</body>
+</html>
+
