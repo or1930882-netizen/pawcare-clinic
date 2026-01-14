@@ -11,6 +11,25 @@
       --verde-claro: #e8f5f4;
       --naranja: #f4a261;
       --texto: #333;
+      .cta-agenda {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background-color: var(--naranja);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-agenda:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
     }
 
     * {
@@ -119,6 +138,9 @@
       <strong>Pequeñas patitas, grandes sonrisas.</strong><br>
       Porque su bienestar también es amor.
     </p>
+    <a href="agenda.html" class="cta-agenda">
+  Agendar cita
+</a>
   </header>
 
   <!-- IMAGEN CLÍNICA -->
@@ -283,6 +305,7 @@
 
 </body>
 </html>
+
 
 
 
