@@ -35,6 +35,20 @@
     * {
       box-sizing: border-box;
     }
+.cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-opinion {
+  background-color: var(--verde);
+}
+
+.cta-opinion:hover {
+  background-color: #247b77;
+}
 
     body {
       margin: 0;
@@ -138,9 +152,16 @@
       <strong>Pequeñas patitas, grandes sonrisas.</strong><br>
       Porque su bienestar también es amor.
     </p>
-    <a href="agenda.html" class="cta-agenda">
-  Agendar cita
-</a>
+ <div class="cta-group">
+  <a href="agenda.html" class="cta-agenda">
+    Agendar cita
+  </a>
+
+  <a href="opinion.html" class="cta-agenda cta-opinion">
+    Tu opinión ⭐
+  </a>
+</div>
+
   </header>
 
   <!-- IMAGEN CLÍNICA -->
@@ -305,6 +326,7 @@
 
 </body>
 </html>
+
 
 
 
