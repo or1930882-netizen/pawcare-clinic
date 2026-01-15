@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tu opinión · PawCare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #2b8f8b;
+      --verde-claro: #e8f5f4;
+      --naranja: #f4a261;
+      --texto: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f7fbfa;
+      color: var(--texto);
+    }
+
+    header {
+      background: linear-gradient(180deg, #ffffff, var(--verde-claro));
+      text-align: center;
+      padding: 50px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 10px 0;
+      color: var(--verde);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    section h2 {
+      color: var(--verde);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    .form-container {
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Tu opinión nos ayuda a mejorar 🐾</h1>
+  <p>
+    Queremos ofrecer siempre la mejor atención posible.
+    Tu experiencia es muy importante para nosotros.
+  </p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Cuéntanos tu experiencia</h2>
+    <p>
+      Si ya has tenido una cita con nosotros, nos encantaría conocer tu opinión.
+      Solo te llevará un minuto y nos ayuda mucho a seguir cuidando mejor de
+      vuestras mascotas.
+    </p>
+
+    <div class="form-container">
+      <iframe
+        data-tally-src="https://tally.so/embed/jaoGJa?alignLeft=1&hideTitle=1&transparentBackground=1"
+        loading="lazy"
+        width="100%"
+        height="750"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 PawCare Clínica Veterinaria · Proyecto de prácticas
+</footer>
+
+<script>
+  var d = document,
+    w = "https://tally.so/widgets/embed.js",
+    v = function () {
+      if (typeof Tally !== "undefined") {
+        Tally.loadEmbeds();
+      } else {
+        d.querySelectorAll("iframe[data-tally-src]").forEach(function (e) {
+          e.src = e.dataset.tallySrc;
+        });
+      }
+    };
+  if (typeof Tally !== "undefined") {
+    v();
+  } else if (d.querySelector('script[src="' + w + '"]') === null) {
+    var s = d.createElement("script");
+    s.src = w;
+    s.onload = v;
+    s.onerror = v;
+    d.body.appendChild(s);
+  }
+</script>
+
+</body>
+</html>
